@@ -1,21 +1,98 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h1>Heading1</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam nam perspiciatis tempora unde minima quod suscipit hic officiis assumenda cupiditate libero nisi sapiente doloremque molestias ea, alias debitis iure non.
+</p>
 
-<router-outlet></router-outlet>
+
+<button color="primary" mat-raised-button>Button 1</button>
+<button color="accent" mat-raised-button>Button 2</button>
+
+<!-- 
+<h1>Heading 1</h1>
+<h2>Heading 2</h2> -->
+
+<!-- <button 
+(click)="openDialog()"
+mat-raised-button>Open Dialog</button> -->
+
+<!-- <mat-tab-group>
+  <mat-tab label="Billing">
+    Content of the Billing tab.
+  </mat-tab>
+  <mat-tab label="Shipping">
+    content of the Shipping tab.
+  </mat-tab>
+</mat-tab-group> -->
+
+<!-- <span matTooltip="Here is my tooltip"
+matTooltipPosition="right">Some text </span> -->
+
+<!-- 
+<mat-progress-spinner
+*ngIf ="isLoading"
+ mode="indeterminate" >
+   </mat-progress-spinner> -->
+
+<!-- 
+<mat-chip-list>
+    <mat-chip
+    *ngFor="let category of categories"
+    (click)= "setectCategory(category)"
+    [selected]="category.selected">{{category.name}}</mat-chip> 
+  </mat-chip-list> -->
+
+<!-- <button mat-button>Click me!</button>
+<button  color="primary" mat-raised-button> primary </button>
+<button  color="accent" mat-raised-button> accent </button>
+<button  color="warn" mat-raised-button> warn </button>
+<button  color="primary" mat-fab> <mat-icon> bug_report  </mat-icon> </button> -->
+
+<!-- 
+<mat-form-field>
+    <input
+    (focus)="BirthDate.close()"
+     [min]="minDate"
+     [max]="maxDate"
+     type="text" matInput [matDatepicker]="BirthDate">
+    <mat-datepicker-toggle matSuffix [for]="BirthDate"></mat-datepicker-toggle>
+    <mat-datepicker #BirthDate touchUi="true"> </mat-datepicker>
+  </mat-form-field> -->
+   
+<!-- 
+  <mat-form-field>
+    <input
+    ngModel
+    #username="ngModel"
+    name="username"
+    matInput placeholder="Username">
+    <mat-hint>Type a unique username.</mat-hint>
+    <span matSuffix>@domain.com</span>
+    <span matPrefix>admin.</span>
+    <mat-error *ngIf="username.invalid && username.errors.required"
+    >The username field name is required.</mat-error>
+  </mat-form-field> -->
+
+  <!-- <mat-form-field>
+    <textarea matInput matTextareaAutosize rows="2"></textarea>
+  </mat-form-field> -->
+
+<!-- <mat-select [(ngModel)] ="color" >
+  <mat-option
+  *ngFor="let color of colors"
+  [value]="color.id">{{color.name}}</mat-option>
+</mat-select> -->
+   
+<!-- <mat-radio-group>
+    <mat-radio-button value="1">Male</mat-radio-button>
+    <mat-radio-button value="0">Female</mat-radio-button>
+  </mat-radio-group>    -->
+     
+  <!-- <mat-checkbox
+      #showDetails
+      [value]=""
+      checked="isChecked"
+      (change)="onChange($event)"
+      >Show details.</mat-checkbox>
+ <div *ngIf="showDetails.checked">Show details...</div> -->
+
+ <router-outlet></router-outlet>
